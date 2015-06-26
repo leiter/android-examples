@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/pasteme"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minLines="3"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/yellow_light" >
+
+        <ImageButton
+            android:id="@+id/flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"/>
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/flag"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:minLines="4"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/testspinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/t"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/yellow_bright" >
+
+        <ImageButton
+            android:id="@+id/flag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null" />
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/flag2"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:minLines="2"
+            android:scrollbars="vertical"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="120dp"
+            android:paddingRight="120dp" >
+
+            <Button
+                android:id="@+id/saveme"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/my_button"
+                android:drawableTop="@android:drawable/ic_menu_save"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/android_speak"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/playme"
+                android:drawableTop="@android:drawable/ic_media_play"
+                android:text="@string/speak" />
+
+            <Button
+                android:id="@+id/android_listen"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/my_button"
+                android:drawableTop="@android:drawable/ic_btn_speak_now"
+                android:text="@string/listen" />
+
+            <Button
+                android:id="@+id/clear"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/my_button"
+                android:drawableTop="@android:drawable/ic_input_delete"
+                android:text="@string/clear" />
+
+            <Button
+                android:id="@+id/translate"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/my_button"
+                android:drawableTop="@android:drawable/ic_menu_search"
+                android:text="@string/translate" />
+
+            <ToggleButton
+                android:id="@+id/keepSttList"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/my_button"
+                android:checked="true"
+                android:drawableTop="@android:drawable/ic_menu_more"
+                android:textOff="List OFF"
+                android:textOn="List ON  "
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/showBigField"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/my_button"
+          
+                android:text="@string/showPastBoard" />
+        </LinearLayout>
+    </HorizontalScrollView>
+<!--        android:drawableTop="@drawable/pasty"  -->
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

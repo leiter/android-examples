@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="Pizza">
+        
+        <item >Pizza Salami</item>
+        <item >Pizza Diablo</item>
+        <item >Pizza Magherita</item>
+        <item >Pizza Thunfish</item>
+        
+    </string-array>
+    
+</resources>

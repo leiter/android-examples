@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_old"
+        android:layout_alignParentBottom="true"
+        android:text="Next Act"
+        android:onClick="gotoanim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:onClick="show_new"
+        android:text="press new"
+        android:layout_toRightOf="@id/button_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+    <Button
+        android:onClick="gohearbeat"
+        android:text="heart"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@color/accent_material_light"
+        android:orientation="horizontal"
+        android:id="@+id/view"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button_old" />
+
+</RelativeLayout>
